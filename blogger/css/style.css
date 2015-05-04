@@ -1,0 +1,264 @@
+/* 
+	The XOOPS theme "blogger" is based on theme from http://code.blogspot.com/ and is not expected to be re-distributed. You shall be responsible for all copyright. 
+	-- D.J., http://xoopsforge.com
+*/
+@import "blogger.css";
+
+table{
+	width: 100%;
+}
+
+table td {
+	vertical-align: top;
+	margin-top: 2px;
+	}
+
+form{
+	margin-bottom: 0px;
+}
+
+input.formButton {}
+
+.item {
+	border:#99B5CC;
+}
+.itemHead {
+	padding-top: 20px;
+	padding-bottom: 10px;
+  	/* 
+  	background:url("../images/c_bot.gif") no-repeat bottom;
+  	*/
+	/*
+	background-color: #E1D4C0;
+	color: #FFFFFF;
+	border-bottom:1px solid #99B5CC;
+	*/
+	}
+	
+.itemTitle {
+	font-size: 18px;
+	color: #f60;
+	font-weight: bold;
+	/*
+	padding-left: 18px;
+  	background:url("../images/icon_prog_arrow.gif") no-repeat left;
+  	*/
+	}
+	
+.itemInfo {
+	font-size: 90%;
+	padding: 3px 3px 10px 0;
+	/*
+	background-color: #efefef
+	*/
+}
+
+.itemPoster {
+	font-size: 90%;
+}
+
+.itemPosate {
+	font-size: 90%;
+}
+.itemStats {
+	font-size: 90%;
+	}
+	
+.itemBody {
+	padding-left: 5px;
+}
+
+.itemText {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.5em;
+}
+
+.itemText:first-letter {
+	font-size: 133%;
+	font-weight: bold;
+	}
+	
+.itemFoot {
+	font-size: 90%;
+	text-align: right;
+	padding: 10px 3px;
+	border-bottom: 2px solid #E1D4C0;
+	/*
+	background-color: #efefef;
+	*/
+}
+.itemAdminLink {
+	font-size: 90%;
+}
+.itemPermaLink {
+	font-size: 90%;
+}
+
+.outer { background-color: #FFFFFF; }
+.head, .head a, .head a:visited {
+	background-color: #E1D4C0;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.even {background-color: #F3ECE6; }
+.odd {background-color: #F8F5F2; }
+.foot {	background-color: #E1D4C0; }
+
+/*
+tr.even td {background-color: #EEEEEE; }
+tr.odd td {background-color: #F7F7F7; }
+*/
+
+div.errorMsg {
+	background-color: #FFCCCC;
+	text-align: center;
+	border-top: 1px solid #DDDDFF;
+	border-left: 1px solid #DDDDFF;
+	border-right: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	font-weight: bold;
+	padding: 10px;
+}
+div.confirmMsg {
+	background-color: #DDFFDF;
+	color: #136C99;
+	text-align: center;
+	border-top: 1px solid #DDDDFF;
+	border-left: 1px solid #DDDDFF;
+	border-right: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	font-weight: bold;
+	padding: 10px;
+}
+div.resultMsg {
+	background-color : #CCCCCC;
+	color: #333333;
+	text-align: center;
+	border-top: 1px solid silver;
+	border-left: 1px solid silver;
+	font-weight: bold;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding: 10px;
+}
+div.xoopsCode {
+	color: #0D3F72;
+	background: #FCFCFC;
+	border: 1px inset #0D3F72;
+	font-family: Arial, Courier,monospace;
+	width: 500px;
+	height: 200px;
+	margin: 0.5em;
+	overflow: auto;
+	padding: 3px;
+}
+html>body div.xoopsCode {
+    width:95%;
+    height:auto;
+    max-height:250px;
+	padding-bottom: 30px;
+}
+div.comText > div.xoopsCode {width:95%;}
+
+div.xoopsQuote {
+	color: #0D3F72;
+	font-family: Arial, Courier, monospace;
+	border: 1px inset #0D3F72;
+	padding: 0px;
+}
+
+.comTitle {
+	font-weight: bold;
+	padding: 5px;
+}
+
+.comText {
+	padding: 2px;
+}
+
+.comUserStat {
+	color: #2F5376;
+	margin: 2px;
+	border: solid 1px #FFFFFF;
+	}
+.comUserStatus {
+	color: #2F5376;
+	margin-bottom: 5px;
+	}
+.comUserStatCaption {
+	font-weight: normal;
+}
+.comUserRank {
+	margin: 2px;
+}
+.comUserRankText {
+	font-size: 12px;
+	font-weight:bold;
+	margin: 5px;
+}
+.comUserRankImg {
+	border: 0px;
+}
+.comUserName {}
+.comUserImg {
+	margin: 2px;
+}
+.comDate {
+	border: solid 1px #FFFFFF;
+	margin: 2px;
+	font-size: 12px;
+}
+.comDateCaption {
+	font-size: smaller
+}
+
+#mainmenu a {
+	font-size:13px;
+	border-bottom-color: #D8E2EB;
+	display: block;
+	margin: 0;
+	padding: 4px;
+	line-height:130%;
+}
+#mainmenu a:hover {
+	font-weight:bold;
+}
+#mainmenu a.menuTop {}
+#mainmenu a.menuSub {padding-left: 15px;}
+
+#usermenu a {
+	font-size:13px;
+	text-align: left;
+	display: block;
+	margin: 0;
+	padding: 4px;
+}
+#usermenu a:hover {
+	font-weight:bold;
+	border: 0px;
+}
+small{
+	font-size: 11px;
+}
+
+acronym { cursor: help; }
+
+/* color -- dropdown menu for Forum */
+div.dropdown a, div.dropdown .menubar a{
+	color:#FFFFFF;
+}
+
+div.dropdown .menu, div.dropdown .menubar, div.dropdown .item, div.dropdown .separator{
+	background-color: #E1D4C0;
+	color:#FFFFFF;
+}
+
+div.dropdown .separator{
+	border: 1px inset #e0e0e0;
+}
+
+div.dropdown .menu a:hover, div.dropdown .userbar a:hover{
+	color: #333;
+}
+/* color - end */

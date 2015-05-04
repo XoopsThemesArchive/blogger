@@ -1,0 +1,412 @@
+/*
+-----------------------------------------------
+blogger base screen style
+author:   douglas bowman
+version:  14 Jan 2004
+----------------------------------------------- */
+
+/*
+@import "flexible_buttons.css";
+*/
+
+html body {
+	font-size: 13px;
+	margin:0;
+	padding:0;
+	background:#E1D4C0 url("../images/sides_body.gif") repeat-y center top;
+	text-align:center;
+	font:small "Trebuchet MS",Verdana,Arial,Sans-serif;
+	color:#333;
+  }
+
+/* Page Structure
+----------------------------------------------- */
+#body {
+  width:710px;
+  padding:10px 0 15px;
+  margin:0 auto;
+  text-align:left;
+  }
+#main {
+  background:#fff url("../images/c_top.gif") no-repeat left top;
+  padding-top:15px;
+  float:left;
+  width:100%;
+  margin-bottom: 15px;
+  }
+#m2 {
+  background:url("../images/c_bot.gif") no-repeat left bottom;
+  padding-bottom:15px;
+  float:left;
+  width:100%;
+  }
+#m3 {
+  border:5px solid #E1D4C0;
+  border-width:0 5px;
+  padding:0 15px;
+  float:left;
+  width:670px;
+  }
+
+#sidebar {display:none;}
+.ms #main-wrap, .sm #main-wrap {width:490px;}
+.ms #sidebar, .sm #sidebar {width:200px; display:block;}
+.ms #main-wrap, .sm #sidebar {float:left;}
+.ms #sidebar, .sm #main-wrap {float:right;}
+.ms #main, .sm #main {
+  background-image:url("../images/c490_top.gif");
+  float:left;
+  width:490px;
+  }
+.ms #m2, .sm #m2 {
+  background-image:url("../images/c490_bot.gif");
+  }
+.ms #m3, .sm #m3 {
+  width:450px;
+  }
+
+
+/* Links
+----------------------------------------------- */
+a {
+  text-decoration:none;
+  font-weight:bold;
+  color:#36c;
+  }
+a:hover {
+  text-decoration:underline;
+  color:#f60;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Header
+----------------------------------------------- */
+html #header {
+  background:#025 url("../images/sides_head.gif") repeat-y center top;
+  position:relative;
+  top:-4px;
+  border-width:0;
+  border-bottom:4px solid #47d;
+  padding:0;
+  }
+#h2 {
+  position:relative;
+  top:4px;
+  }
+#h3 {
+  width:710px;
+  margin:0 auto;
+  padding:15px 20px 14px;
+  border-bottom:4px solid #69f;
+  text-align:left;
+  background:url("../images/bg_logo.gif") no-repeat left top;
+  }
+#header a {
+  color:#9cf;
+  padding:0 .1em;
+  font-weight:bold;
+  text-decoration:none;
+  }
+#header .logo{
+	float: left; 
+	text-align: left; 
+	display: inline;
+	}
+#header .panel{
+	float: right; 
+	text-align: right; 
+	display: inline;
+	vertical-align: bottom;
+	}
+#header ul{
+	list-style: none !important; 
+	display: inline;
+	}
+#header ul li {
+	padding:0 12px 0 0;
+	line-height:1.2em;
+	background:url("../images/bullet.gif") no-repeat right !important;
+	}
+
+/* Titles
+----------------------------------------------- */
+h1 {
+  margin:0 0 15px;
+  font-size:220%;
+  line-height:1.2em;
+  font-weight:normal;
+  color:#666;
+  }
+h1 strong {
+  color:#000;
+  }
+h1 em {
+  font-style:normal;
+  font-weight:bold;
+  color:#f60;
+  }
+h2 {
+  margin:1em 0 .5em;
+  font-size:130%;
+  line-height:1.3em;
+  color:#826C55;
+  font-weight:normal;
+  }
+.first {
+  margin-top:0;
+  }
+#main h2 strong {
+  color:#f60;
+  }
+#sidebar .mod h2 {
+  margin-top:0;
+  color:#333;
+  }
+#sidebar h2 strong {
+  color:#826C55;
+  }
+h3 {
+  margin:1em 0 .25em;
+  padding:.25em 0;
+  font-size:93%;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:#BAA68E;
+  }
+h4 {
+  margin:1em 0 .25em;
+  font-size:100%;
+  }
+
+.post-title{
+  color:#f60;
+}
+  
+table {
+  border-width:0;
+  font-size:100%;
+  color:#333;
+  width:100%;
+  }
+  
+table td#mainmenu {
+  background:#fff url("../images/bg_table.jpg") repeat-x left top;
+  }  
+  
+th, td {
+  border-top:0px solid #CABBA9;
+  border-width:0px 0 0 0;
+  padding:5px 10px;
+  font-size:93%;
+  line-height:1.5em;
+  }
+th {
+  background:#fff;
+  padding-left:5px;
+  font-size:100%;
+  color:#664E38;
+  text-align:left;
+  }
+/*  
+.head th {
+  background:#036;
+  border-width:0;
+  padding-left:10px;
+  padding-top:3px;
+  padding-bottom:3px;
+  text-transform:uppercase;
+  vertical-align:bottom;
+  color:#fff;
+  font-size:85% !important;
+  _font-size:10px !important;
+  line-height:1.2em;
+  white-space:normal;
+  }
+.head th.first {
+  padding-left:5px;
+  }
+.date, .time, .num {
+  text-align:right;
+  }
+.date, .time {
+  white-space:nowrap;
+  }
+*/
+
+/* Module
+----------------------------------------------- */
+.mod {
+  padding-bottom:6px;
+  margin-bottom:15px;
+  }
+.mod2 {
+  padding-top:6px;
+  }
+#sidebar .mod {
+  background:url("../images/bg_mod_bot.gif") no-repeat left bottom;
+  }
+#sidebar .mod2 {
+  background:url("../images/bg_mod_top.gif") no-repeat left top;
+  }
+#sidebar .mod3 {
+  border:2px solid #E1D4C0;
+  border-width:0 2px 1px;
+  border-bottom-color:#F5EDE3;
+  padding:2px 10px;
+  }
+#sidebar .mod2>.mod3 {
+  border-bottom-width:0;
+  }
+
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  clear:both;
+  padding:15px 0 0;
+  }
+#footer div {
+  background:#E1D4C0 url("../images/round15_bot.gif") no-repeat left bottom;
+  }
+#footer p {
+  background:url("../images/round15_top.gif") no-repeat left top;
+  min-height:2px;
+  margin:0;
+  padding:7px 20px;
+  color:#826C55;
+  text-align:center;
+  font-size:93%;
+  line-height:1.2em;
+  }
+#footer hr {
+  display:none;
+  }
+
+
+/* Buttons
+----------------------------------------------- */
+button
+  {
+    padding:0.5em;
+    cursor:pointer;
+  }
+  
+
+  
+/* Miscellaneous
+----------------------------------------------- */
+p {
+  margin:0 0 .75em;
+  line-height:1.5em;
+  }
+#sidebar p {
+  font-size:93%;
+  }
+p strong {
+  color:#000;
+  }
+ul {
+  margin:0 0 1em;
+  padding:0;
+  list-style:none;
+  }
+#main ul {
+  margin-left:.5em;
+  }
+#main table ul {
+  margin-left:0;
+  }
+ul li {
+  margin:0 0 .25em;
+  padding:0 0 0 12px;
+  background:url("../images/bullet.gif") no-repeat 2px .45em;
+  line-height:1.2em;
+  }
+dl {
+  margin:0;
+  font-size:93%;
+  line-height:1.5em;
+  }
+dt {
+  float:left;
+  margin-right:.5em;
+  }
+dd {
+  margin:0 0 .75em 0;
+  }
+.nowrap {
+  white-space:nowrap;
+  }
+form {
+  margin:0;
+  }
+table label {
+  margin-right:5px;
+  }
+label:hover {
+  cursor:pointer;
+  }
+.r {
+  clear:both;
+  display:block;
+  margin:0;
+  padding:0;
+  height:1px;
+  line-height:1px;
+  font-size:1px;
+  }
+.hide {
+  visibility:hidden;
+  }
+
+/*
+-----------------------------------------------
+blogger base style
+author:   douglas bowman
+version:  14 Jan 2004
+----------------------------------------------- */
+/*
+@import "blogger_main.css";
+*/
+
+
+/* Low-end styles
+----------------------------------------------- */
+body {
+  background:#E1D4C0;
+  }
+#header {
+  padding:5px;
+  background:#036;
+  border-width:1px;
+  border-style:none;
+  color:#369;
+  }
+#header a {
+  color:#9cf;
+  }
+a img {
+  border-width:0;
+  border-style:none;
+  color:#E1D4C0;
+  }
+#header a img {
+  color:#036;
+  }
+p {
+  color:#333;
+  }
+#header p {
+  color:#69c;
+  }
+
+
+/* Mid-pass filter (after styles)
+----------------------------------------------- */
+@media tty {
+  i{content:"\";/*" "*/}} @import 'blogger_ie5win.css'; /*";}
+}/* */

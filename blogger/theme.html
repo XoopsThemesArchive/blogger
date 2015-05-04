@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<title><{if $xoops_pagetitle}><{$xoops_pagetitle}> - <{/if}><{$xoops_sitename}></title>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_pagetitle}>, <{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_pagetitle}>, <{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<!-- 
+	The XOOPS theme "blogger" is based on theme from http://code.blogspot.com/ and is not expected to be re-distributed. You shall be responsible for all copyright. 
+	D.J., http://xoopsforge.com 
+//-->
+<meta name="generator" content="XOOPS" />
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<{if $xoops_showlblock OR $xoops_showrblock}>
+<body class="ms">
+<{else}>
+<body>
+<{/if}>
+
+<!-- The header start -->
+<div id="header">
+  <div id="h2"><div id="h3">
+    <div class="logo">
+  	<a href="<{$xoops_url}>" title="<{$xoops_sitename}> -- <{$xoops_slogan}>">
+      <img src="<{$xoops_imageurl}>images/bdevelopers.gif" width="416" height="100" alt="<{$xoops_slogan}>" />
+    </a>
+    </div>
+    <div class="panel">
+    <ul style="list-style: none !important; display: inline;">
+    <li><a href="<{$xoops_url}>/modules/article/">Article</a></li>
+    <li><a href="<{$xoops_url}>/modules/newbb/">Forum</a></li>
+    <li><a href="<{$xoops_url}>/modules/wordpress/">WordPress</a></li>
+    <li><a href="<{$xoops_url}>/modules/planet/">Xoops Planet</a></li>
+    </ul>
+    <br style="clear: both;">
+    <small>
+    <{if $xoops_isadmin}>
+    <a href="<{$xoops_url}>/user.php">Profile</a> | <a href="<{$xoops_url}>/user.php?op=logout">Logout</a> | <a href="<{$xoops_url}>/admin.php">Admin</a>
+    <{elseif $xoops_isuser}>
+    <a href="<{$xoops_url}>/user.php">Profile</a> | <a href="<{$xoops_url}>/user.php?op=logout">Logout</a>
+    <{else}>
+    <a href="<{$xoops_url}>/register.php">Register</a> | <a href="<{$xoops_url}>/user.php#lost">Forget Password</a> | <a href="<{$xoops_url}>/user.php">Login</a>
+    <{/if}> 
+     | <a href="#footer" title="Go to Bottom">Bottom</a>
+    </small>
+    </div>
+    <span class="r">
+    </span>
+ </div></div>
+</div>
+<!-- The header end -->
+
+
+<!-- The body start -->
+<div id="body">
+  
+	<!-- Begin center blocks -->
+	<div id="main-wrap">
+  <{if $xoops_contents}>
+  <div id="main"><div id="m2"><div id="m3">
+	<{$xoops_contents}>
+  </div></div></div>
+  <{/if}>
+	
+	<{foreach item=block from=$xoops_ccblocks}>
+  <!-- Begin main -->
+  <div id="main"><div id="m2"><div id="m3">
+    <h2><strong>
+    <{if $block.title != ""}><{$block.title}><{/if}>
+    </strong></h2>
+    <div class="post-body">
+      <p><div style="clear:both;"></div>
+      <{$block.content}>
+      <div style="clear:both; padding-bottom: 0.25em;"></div></p>
+    </div>	
+  </div></div></div>
+  <!-- End main -->
+	<{/foreach}>    
+
+	<{foreach item=block from=$xoops_clblocks}>
+  <!-- Begin main -->
+  <div id="main"><div id="m2"><div id="m3">
+    <h2><strong>
+    <{if $block.title != ""}><{$block.title}><{/if}>
+    </strong></h2>
+    <div class="post-body">
+      <p><div style="clear:both;"></div>
+      <{$block.content}>
+      <div style="clear:both; padding-bottom: 0.25em;"></div></p>
+    </div>	
+  </div></div></div>
+  <!-- End main -->
+	<{/foreach}>    
+
+	<{foreach item=block from=$xoops_crblocks}>
+  <!-- Begin main -->
+  <div id="main"><div id="m2"><div id="m3">
+    <h2><strong>
+    <{if $block.title != ""}><{$block.title}><{/if}>
+    </strong></h2>
+    <div class="post-body">
+      <p><div style="clear:both;"></div>
+      <{$block.content}>
+      <div style="clear:both; padding-bottom: 0.25em;"></div></p>
+    </div>	
+  </div></div></div>
+  <!-- End main -->
+	<{/foreach}>    
+	
+	</div>
+	<!-- End center blocks -->
+  
+  <!-- Begin sidebar -->
+  <div id="sidebar">
+  
+	<{foreach item=block from=$xoops_lblocks}>
+    <div class="mod"><div class="mod2"><div class="mod3">
+		<{if $block.title != ""}><h2><strong><{$block.title}></strong></h2><{/if}>
+		<p><{$block.content}></p>
+	</div></div></div>
+	<{/foreach}>
+  
+	<{foreach item=block from=$xoops_rblocks}>
+    <div class="mod"><div class="mod2"><div class="mod3">
+		<{if $block.title != ""}><h2><strong><{$block.title}></strong></h2><{/if}>
+		<p><{$block.content}></p>
+	</div></div></div>
+	<{/foreach}>
+
+  </div>
+  <!-- End sidebar -->  
+  
+  <div id="footer"><div>
+    <hr />
+    <p>
+	<{$xoops_footer}> | Theme <a href="http://xoops.org.cn" title="">Xoops China</a>
+    <a href="<{$xoops_url}>/modules/newbb/">CBB</a>
+	 | <acronym title="
+	<{php}>
+	echo round(($GLOBALS['xoopsLogger']->dumpTime()), 3)." Seconds | ".array_sum(array_map("count",$GLOBALS['xoopsLogger']->queries))." Queries";
+	<{/php}>
+	" >Pageload</acronym>
+     | <a href="#header" title="Back to Top">Top</a>
+      </p>
+  </div></div>
+  
+</div>
+
+</div>
+
+</body>
+</html>
